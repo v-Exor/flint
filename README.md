@@ -2,8 +2,8 @@
 
 An independent white-and-orange VisionLab website for **Laboratory Exercise No. 6**. It includes genuine browser inference with the COCO-pretrained YOLO11 nano detector and the student's actual ten-epoch cat/dog detector. It does not depend on any other laboratory repository.
 
-Live website: **https://v-exor.github.io/LabAct6_CSST106/**  
-Repository: **https://github.com/v-Exor/LabAct6_CSST106**
+Live website: **https://v-exor.github.io/flint/**  
+Repository: **https://github.com/v-Exor/flint**
 
 ## Identification and scope
 
@@ -54,7 +54,7 @@ Edit `site-config.js` with your real destinations:
 ```javascript
 window.LAB_CONFIG = {
   compilationUrl: '',
-  repositoryUrl: 'https://github.com/v-Exor/LabAct6_CSST106',
+  repositoryUrl: 'https://github.com/v-Exor/flint',
 };
 ```
 
@@ -62,7 +62,7 @@ The repository link is configured. Set `compilationUrl` once your compilation we
 
 ## Deploy to your own free GitHub Pages repository
 
-This project uses the public `v-Exor/LabAct6_CSST106` repository and the included GitHub Actions Pages workflow. Future pushes to `main` automatically update the website. To deploy a separate copy:
+This project uses the public `v-Exor/flint` repository and the included GitHub Actions Pages workflow. Future pushes to `main` automatically update the website. To deploy a separate copy:
 
 1. Create a **new public GitHub repository** for Lab 6 using your own chosen name.
 2. Upload the **contents** of this project into the repository root, preserving the folders. `index.html` should be at the root, not inside another `lab-06` directory. Do not upload `.export-deps`, `.npm-cache`, `.venv`, `node_modules`, `artifacts`, `dist`, or `test-results`. The delivery ZIP already excludes them.
@@ -76,7 +76,7 @@ Alternative: choose **Deploy from a branch → main → /(root)**. The buildless
 Add the published URL to your compilation's Lab 6 button:
 
 ```text
-https://v-exor.github.io/LabAct6_CSST106/
+https://v-exor.github.io/flint/
 ```
 
 All application URLs are relative, so changing the repository name does not require changing a hard-coded base path. No custom domain or paid backend is required.

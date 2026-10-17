@@ -2,8 +2,8 @@
 
 ## Public GitHub Pages deployment — 17 October 2026
 
-- Repository: https://github.com/v-Exor/LabAct6_CSST106
-- Website: https://v-exor.github.io/LabAct6_CSST106/
+- Repository: https://github.com/v-Exor/flint
+- Website: https://v-exor.github.io/flint/
 - GitHub Actions deployment completed successfully. The public homepage returned HTTP 200.
 - Three browser tests passed against the actual public HTTPS website: both real YOLO model inference paths; annotation, coordinate validation, label export, history and the ten-epoch cap; image upload and evaluation of all six test images with JSON export.
 - The repository contains all 132 source, model, runtime, dataset, report, download, test, and deployment files. Local dependency caches and test artifacts are excluded.
@@ -38,7 +38,7 @@ This verifies the tested conversion/inference/preprocessing path, not universal 
 - Physical webcam access and Safari/Firefox/mobile-device inference have not been independently tested in this website build. HTTPS/localhost and permission are required for a real webcam. Image/video functionality is available without camera permission.
 - Validation/test scores in the website are the genuine original Ultralytics run, not claims about newly measured browser performance. Live fixed-threshold precision/recall are explicitly separate from recorded mAP.
 - Model fitting is local Python only. The site offers actual inference and annotation plus a recorded training-history explorer and real Python command/source downloads.
-- GitHub Pages-style root and repository-prefix assets were checked locally. The public deployment target is `v-Exor/LabAct6_CSST106`, using the included GitHub Actions workflow. The repository link is configured; the compilation destination remains configurable until that website is online.
+- GitHub Pages-style root and repository-prefix assets were checked locally. The public deployment target is `v-Exor/flint`, using the included GitHub Actions workflow. The repository link is configured; the compilation destination remains configurable until that website is online.
 - Browser annotation edits last for this page session; individual TXT downloads persist them. The prepared ZIP contains the original dataset, not unsaved visitor edits.
 
 ## Reproduce
