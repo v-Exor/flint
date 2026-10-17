@@ -1,0 +1,17 @@
+{
+  "name": "csst106-lab-06-yolo-object-detection",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent GitHub Pages laboratory with real pretrained and custom YOLO11 browser inference",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "vendor": "node scripts/vendor.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test tests/processing.test.mjs",
+    "test:e2e": "playwright test",
+    "package": "python scripts/package-delivery.py"
+  },
+  "dependencies": { "onnxruntime-web": "1.23.2" },
+  "devDependencies": { "@playwright/test": "1.56.0", "@axe-core/playwright": "4.14.0" }
+}

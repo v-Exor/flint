@@ -1,0 +1,12 @@
+CSST106 Laboratory 6 YOLO Object Detection
+
+RESULTS AND ANALYSIS
+The custom YOLO11 nano model was trained for 10 epochs on 42 training images, with 12 validation images and 6 held-out test images. Test precision was 73.04%, recall 83.33%, mAP50 80.46%, and mAP50-95 35.03%. Training box loss decreased from 1.54 to 0.89; validation mAP50 stayed near 80%. False detections, missed animals, and localization errors remain. Six test images provide limited evidence of generalization.
+
+WRITTEN QUESTION
+What is object detection in computer vision, and how does it differ from image classification? Explain using a real-world example.
+
+Object detection identifies objects and locates each one using a bounding box and class label. Image classification assigns a category to the whole image without locating individual objects. For example, classification might label a photograph "cat", while detection can identify two cats and one dog and draw a separate labeled box around each animal.
+
+IMPLEMENTATION NOTE
+The handout body uses YOLOv11 despite YOLOv8 in the filename. The completed run used 10 epochs as explicitly requested instead of the handout's 100-epoch example.

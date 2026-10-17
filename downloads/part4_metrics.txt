@@ -1,0 +1,11 @@
+VAL
+Precision: 0.5890
+Recall: 0.9167
+mAP50: 0.8047
+mAP50-95: 0.4309
+
+TEST
+Precision: 0.7304
+Recall: 0.8333
+mAP50: 0.8046
+mAP50-95: 0.3503

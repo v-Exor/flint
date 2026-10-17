@@ -1,0 +1,1431 @@
+{
+  "activity": 6,
+  "model": "YOLO11n",
+  "epochs": 10,
+  "inputSize": 640,
+  "classes": [
+    "cat",
+    "dog"
+  ],
+  "seed": 42,
+  "batchSize": 4,
+  "recordedWebcamDetectionFps": 13.92,
+  "metrics": {
+    "val": {
+      "Precision": 0.589,
+      "Recall": 0.9167,
+      "mAP50": 0.8047,
+      "mAP50-95": 0.4309
+    },
+    "test": {
+      "Precision": 0.7304,
+      "Recall": 0.8333,
+      "mAP50": 0.8046,
+      "mAP50-95": 0.3503
+    }
+  },
+  "history": [
+    {
+      "epoch": 1.0,
+      "time": 47.723,
+      "train/box_loss": 1.54156,
+      "train/cls_loss": 2.79735,
+      "train/dfl_loss": 2.33294,
+      "metrics/precision(B)": 0.89738,
+      "metrics/recall(B)": 0.73241,
+      "metrics/mAP50(B)": 0.80667,
+      "metrics/mAP50-95(B)": 0.396,
+      "val/box_loss": 2.09155,
+      "val/cls_loss": 0.86245,
+      "val/dfl_loss": 4.48603,
+      "lr/pg0": 0.000505152,
+      "lr/pg1": 0.000505152,
+      "lr/pg2": 0.000505152
+    },
+    {
+      "epoch": 2.0,
+      "time": 94.8856,
+      "train/box_loss": 1.28694,
+      "train/cls_loss": 1.39044,
+      "train/dfl_loss": 2.15443,
+      "metrics/precision(B)": 0.53876,
+      "metrics/recall(B)": 0.72417,
+      "metrics/mAP50(B)": 0.65324,
+      "metrics/mAP50-95(B)": 0.30687,
+      "val/box_loss": 2.30103,
+      "val/cls_loss": 2.19911,
+      "val/dfl_loss": 6.38399,
+      "lr/pg0": 0.000955797,
+      "lr/pg1": 0.000955797,
+      "lr/pg2": 0.000955797
+    },
+    {
+      "epoch": 3.0,
+      "time": 139.509,
+      "train/box_loss": 1.34858,
+      "train/cls_loss": 1.36398,
+      "train/dfl_loss": 2.10732,
+      "metrics/precision(B)": 0.27005,
+      "metrics/recall(B)": 0.58333,
+      "metrics/mAP50(B)": 0.38729,
+      "metrics/mAP50-95(B)": 0.13671,
+      "val/box_loss": 2.23722,
+      "val/cls_loss": 3.53252,
+      "val/dfl_loss": 3.17955,
+      "lr/pg0": 0.00129642,
+      "lr/pg1": 0.00129642,
+      "lr/pg2": 0.00129642
+    },
+    {
+      "epoch": 4.0,
+      "time": 173.949,
+      "train/box_loss": 1.32981,
+      "train/cls_loss": 1.54285,
+      "train/dfl_loss": 1.92576,
+      "metrics/precision(B)": 0.41741,
+      "metrics/recall(B)": 0.91667,
+      "metrics/mAP50(B)": 0.5495,
+      "metrics/mAP50-95(B)": 0.27889,
+      "val/box_loss": 1.80186,
+      "val/cls_loss": 1.45496,
+      "val/dfl_loss": 3.66611,
+      "lr/pg0": 0.0011719,
+      "lr/pg1": 0.0011719,
+      "lr/pg2": 0.0011719
+    },
+    {
+      "epoch": 5.0,
+      "time": 209.537,
+      "train/box_loss": 0.89091,
+      "train/cls_loss": 1.19328,
+      "train/dfl_loss": 1.8605,
+      "metrics/precision(B)": 0.41741,
+      "metrics/recall(B)": 0.91667,
+      "metrics/mAP50(B)": 0.5495,
+      "metrics/mAP50-95(B)": 0.27889,
+      "val/box_loss": 1.80186,
+      "val/cls_loss": 1.45496,
+      "val/dfl_loss": 3.66611,
+      "lr/pg0": 0.00100687,
+      "lr/pg1": 0.00100687,
+      "lr/pg2": 0.00100687
+    },
+    {
+      "epoch": 6.0,
+      "time": 246.74,
+      "train/box_loss": 0.97902,
+      "train/cls_loss": 1.18842,
+      "train/dfl_loss": 1.90577,
+      "metrics/precision(B)": 0.55095,
+      "metrics/recall(B)": 0.75,
+      "metrics/mAP50(B)": 0.667,
+      "metrics/mAP50-95(B)": 0.28279,
+      "val/box_loss": 1.86855,
+      "val/cls_loss": 1.34516,
+      "val/dfl_loss": 3.84782,
+      "lr/pg0": 0.000841835,
+      "lr/pg1": 0.000841835,
+      "lr/pg2": 0.000841835
+    },
+    {
+      "epoch": 7.0,
+      "time": 273.721,
+      "train/box_loss": 1.00747,
+      "train/cls_loss": 0.97086,
+      "train/dfl_loss": 1.91091,
+      "metrics/precision(B)": 0.59301,
+      "metrics/recall(B)": 1.0,
+      "metrics/mAP50(B)": 0.88738,
+      "metrics/mAP50-95(B)": 0.4133,
+      "val/box_loss": 1.63991,
+      "val/cls_loss": 1.17066,
+      "val/dfl_loss": 3.25098,
+      "lr/pg0": 0.000676802,
+      "lr/pg1": 0.000676802,
+      "lr/pg2": 0.000676802
+    },
+    {
+      "epoch": 8.0,
+      "time": 290.834,
+      "train/box_loss": 0.89645,
+      "train/cls_loss": 0.90577,
+      "train/dfl_loss": 1.67896,
+      "metrics/precision(B)": 0.59301,
+      "metrics/recall(B)": 1.0,
+      "metrics/mAP50(B)": 0.88738,
+      "metrics/mAP50-95(B)": 0.4133,
+      "val/box_loss": 1.63991,
+      "val/cls_loss": 1.17066,
+      "val/dfl_loss": 3.25098,
+      "lr/pg0": 0.000511769,
+      "lr/pg1": 0.000511769,
+      "lr/pg2": 0.000511769
+    },
+    {
+      "epoch": 9.0,
+      "time": 307.768,
+      "train/box_loss": 0.85237,
+      "train/cls_loss": 0.95294,
+      "train/dfl_loss": 1.71548,
+      "metrics/precision(B)": 0.58872,
+      "metrics/recall(B)": 0.89626,
+      "metrics/mAP50(B)": 0.79095,
+      "metrics/mAP50-95(B)": 0.40347,
+      "val/box_loss": 1.64577,
+      "val/cls_loss": 1.24581,
+      "val/dfl_loss": 3.04139,
+      "lr/pg0": 0.000346736,
+      "lr/pg1": 0.000346736,
+      "lr/pg2": 0.000346736
+    },
+    {
+      "epoch": 10.0,
+      "time": 324.087,
+      "train/box_loss": 0.89231,
+      "train/cls_loss": 0.93342,
+      "train/dfl_loss": 1.62785,
+      "metrics/precision(B)": 0.5883,
+      "metrics/recall(B)": 0.91667,
+      "metrics/mAP50(B)": 0.80471,
+      "metrics/mAP50-95(B)": 0.43092,
+      "val/box_loss": 1.55236,
+      "val/cls_loss": 1.15023,
+      "val/dfl_loss": 2.89124,
+      "lr/pg0": 0.000181703,
+      "lr/pg1": 0.000181703,
+      "lr/pg2": 0.000181703
+    }
+  ],
+  "images": [
+    {
+      "id": "cat-01",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-01.jpg",
+      "width": 500,
+      "height": 429,
+      "labels": [
+        [
+          0.0,
+          0.497,
+          0.5,
+          0.962,
+          0.958042
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_0fccd9e937cef7022f8f30cd5f8bfd0eb769b122f271204f2f0663b8d41d0374.jpg",
+      "sha256": "36a5808fad9b68e45b3db892f57e53eefb9c2563db7aabb0effb7faafa55977b"
+    },
+    {
+      "id": "cat-02",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-02.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.481,
+          0.336898,
+          0.89,
+          0.668449
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_15d9e9dfbfd4ca6119f230d035498d5325c6381191c96061084559e3c144306f.jpg",
+      "sha256": "9609c6cf2b1a34fef30005b1fefffe3c70f5f60fc96e5e1b4c777919a408726c"
+    },
+    {
+      "id": "cat-03",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-03.jpg",
+      "width": 499,
+      "height": 475,
+      "labels": [
+        [
+          0.0,
+          0.652305,
+          0.494737,
+          0.627255,
+          0.972632
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_209d592f3fcd29f3118b47e0cd98aabc17098c81524ba31abd3f57700dae17f0.jpg",
+      "sha256": "6209c9b6624aeaa55dcd924ddfbcf6ec1b1765c19fbc9e79f93c73eafc88ef4a"
+    },
+    {
+      "id": "cat-04",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-04.jpg",
+      "width": 499,
+      "height": 384,
+      "labels": [
+        [
+          0.0,
+          0.447896,
+          0.501302,
+          0.883768,
+          0.950521
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_2857dc97270476a1f38b44eee2a351d15b8082a7eb229065c63cd8b8125c9dc7.jpg",
+      "sha256": "6f675eece962a9c7631b2dafe52431cd721bf28ff6502edaf39ca419d1f1ed1e"
+    },
+    {
+      "id": "cat-05",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-05.jpg",
+      "width": 320,
+      "height": 239,
+      "labels": [
+        [
+          0.0,
+          0.5375,
+          0.48954,
+          0.8125,
+          0.853556
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_333fe6b2964285cab023b1a65b81a1c6c66b288e765cab124eb5a0cfc44134e3.jpg",
+      "sha256": "abc558fd2e00348762f8a14648bd37fe19f9f89eca0348156a392eb867b76036"
+    },
+    {
+      "id": "cat-06",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-06.jpg",
+      "width": 500,
+      "height": 388,
+      "labels": [
+        [
+          0.0,
+          0.496,
+          0.494845,
+          0.9,
+          0.984536
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_33d3ea1dd2de9b481661f45fc5a90b3b382c3571ae29a03d154004c796ac32d1.jpg",
+      "sha256": "72dcc3e26c993135dfcb30a02573798d05da01ba10376f72973e90fdfe931b04"
+    },
+    {
+      "id": "cat-07",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-07.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.486,
+          0.466578,
+          0.928,
+          0.906417
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_3c271eeb574c039c1b8693dd38119ab21ea7641b42ed3c23e9113636bbc1655d.jpg",
+      "sha256": "4b93252c1c678c736a01bf900b8da992ff36598160254d58925f1fb147aa2751"
+    },
+    {
+      "id": "cat-08",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-08.jpg",
+      "width": 300,
+      "height": 234,
+      "labels": [
+        [
+          0.0,
+          0.503333,
+          0.470085,
+          0.953333,
+          0.880342
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_3d48a8285670c400585c58cadbe65923cc2014af2f527b2dc9c442a9dc927b84.jpg",
+      "sha256": "355f128842d756a7a644571fde8377f858049f79a0069e2ae40bb167e8cdcce8"
+    },
+    {
+      "id": "cat-09",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-09.jpg",
+      "width": 499,
+      "height": 373,
+      "labels": [
+        [
+          0.0,
+          0.498998,
+          0.487936,
+          0.961924,
+          0.954424
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_45f6b1e35b34c9c0a1b7ca96225f2f8ccbc6fa10647edfa983923b861b85a48f.jpg",
+      "sha256": "64beba78ecd86b444e03bc3c2ecf5173bace6e48c5b81a0f16d314318d2ed54c"
+    },
+    {
+      "id": "cat-10",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-10.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.468,
+          0.479947,
+          0.892,
+          0.933155
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_544cf6a6e84d6790d7f71c0f6011882aa906248268f28777028338102346956d.jpg",
+      "sha256": "efa7dfa61f610212b4bd49ed794e41ea5be038c65673b4dc654c0e3b513d7791"
+    },
+    {
+      "id": "cat-11",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-11.jpg",
+      "width": 287,
+      "height": 256,
+      "labels": [
+        [
+          0.0,
+          0.533101,
+          0.507812,
+          0.857143,
+          0.898438
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_57f09a56d6b42d8ff1b0d0e74dfa332581a39108911c759979742153141f20b0.jpg",
+      "sha256": "5f9d28c1712ee5884a7eabedf71131f04219078f0dfdab860857ae3db6875f58"
+    },
+    {
+      "id": "cat-12",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-12.jpg",
+      "width": 372,
+      "height": 499,
+      "labels": [
+        [
+          0.0,
+          0.487903,
+          0.462926,
+          0.841398,
+          0.925852
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_6fe321a6fcd0bd97487f6f2da427c8528061d0b320d0f78647dfc9e5e63fe268.jpg",
+      "sha256": "bcd28f59593939b53207ed79e78423908aa21c9a3578214f737eb01a54928001"
+    },
+    {
+      "id": "cat-13",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-13.jpg",
+      "width": 499,
+      "height": 318,
+      "labels": [
+        [
+          0.0,
+          0.502004,
+          0.492138,
+          0.983968,
+          0.946541
+        ],
+        [
+          0.0,
+          0.502004,
+          0.492138,
+          0.983968,
+          0.946541
+        ],
+        [
+          0.0,
+          0.503006,
+          0.501572,
+          0.993988,
+          0.996855
+        ],
+        [
+          0.0,
+          0.487976,
+          0.477987,
+          0.895792,
+          0.91195
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_758b1f994f78fddca06c25c0fa8ed9c4fb326a1107e4af442f160e73b89ed443.jpg",
+      "sha256": "7bb82de1a6b69d9c2faae9059e8a7e30436468366e028bfe05e86b99ddb20044"
+    },
+    {
+      "id": "cat-14",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-14.jpg",
+      "width": 344,
+      "height": 235,
+      "labels": [
+        [
+          0.0,
+          0.510174,
+          0.495745,
+          0.944767,
+          0.940426
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_7f7166ebab59073e172608bdac870e1f5aa5fc37b61fa8306d2f27091f9f28ab.jpg",
+      "sha256": "0405361a4b1a55e00403e895575decfc1b3a1ae66f6a3727b6f2ab1e3bbbdb79"
+    },
+    {
+      "id": "cat-15",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-15.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          0.0,
+          0.492986,
+          0.493333,
+          0.953908,
+          0.933333
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_945eb413b950fee90c555bcce318ca10be13ffebd1fc87b65a52d43a99300c96.jpg",
+      "sha256": "421a195810cff321dcfa1b2a4ac8582cd91214d361ab91eaa8f09ef5fc2cb355"
+    },
+    {
+      "id": "cat-16",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-16.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.502,
+          0.505348,
+          0.912,
+          0.967914
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_a0f893d86ba0e0c7bab6ea101ebe3ff75fc195e2846cea5269f1261a21efdbad.jpg",
+      "sha256": "3c42b14d85022ad88e89e191e5a26bbfece7759ab8d14dd51cf05e36fe6d17c0"
+    },
+    {
+      "id": "cat-17",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-17.jpg",
+      "width": 499,
+      "height": 480,
+      "labels": [
+        [
+          0.0,
+          0.485972,
+          0.470833,
+          0.875752,
+          0.9
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_a1ff00a6d8c8816d568dd81c05db83d67f958b27e9fc5b180b60f107a56a7260.jpg",
+      "sha256": "8f045c781d696e88d1ca30d57a8b7f9fb9d7aafcccab13f9bd55ce347072461c"
+    },
+    {
+      "id": "cat-18",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-18.jpg",
+      "width": 500,
+      "height": 414,
+      "labels": [
+        [
+          0.0,
+          0.486,
+          0.461353,
+          0.924,
+          0.913043
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_bab4ee5db42bf15fcd2cbdf6b026727b9455d1a88e3f9f7a975ebfc4972aa599.jpg",
+      "sha256": "b88fe6c956ca96198348d1e908d89ced7d293dee8c5de7e7d45121d300cedfeb"
+    },
+    {
+      "id": "cat-19",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-19.jpg",
+      "width": 292,
+      "height": 172,
+      "labels": [
+        [
+          0.0,
+          0.523973,
+          0.488372,
+          0.931507,
+          0.930233
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_d71056751939619e00a4f4ecaea509e8176e7b3754a26b700f6d11147b837f49.jpg",
+      "sha256": "021d2ae0d4e1290914204eb3cfd6534e5d293e07fb632e28fb3e5e79280d5b37"
+    },
+    {
+      "id": "cat-20",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-20.jpg",
+      "width": 499,
+      "height": 321,
+      "labels": [
+        [
+          0.0,
+          0.47495,
+          0.496885,
+          0.901804,
+          0.968847
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_d94c75c1d2f80c405919f52145e711ce3919610ac0e52c1f9552bd672ed42a0d.jpg",
+      "sha256": "508c3ac99c7b07135d973721c0315499bf06852e606a534f6953a911c40856aa"
+    },
+    {
+      "id": "cat-21",
+      "species": "cat",
+      "split": "train",
+      "url": "./assets/samples/cat-21.jpg",
+      "width": 499,
+      "height": 396,
+      "labels": [
+        [
+          0.0,
+          0.496994,
+          0.483586,
+          0.917836,
+          0.941919
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_f1f0af9c670ec475e264dd273466f8163069a1542261e100238c536dee56e02f.jpg",
+      "sha256": "02526147f7de19fd9822babd1909b698aa9dd157c8e9800f3810dd68b3d7b65a"
+    },
+    {
+      "id": "dog-01",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-01.jpg",
+      "width": 254,
+      "height": 500,
+      "labels": [
+        [
+          1.0,
+          0.521654,
+          0.527,
+          0.956693,
+          0.946
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_04d90d628d21a05f3faf95531650345c29dd5c0eff597ec1b9aeed264b4844ae.jpg",
+      "sha256": "e77186e964d6724bb09a51ec253e96cb57a272bb42ac54fe91285b7c35e78a43"
+    },
+    {
+      "id": "dog-02",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-02.jpg",
+      "width": 119,
+      "height": 147,
+      "labels": [
+        [
+          1.0,
+          0.521008,
+          0.520408,
+          0.957983,
+          0.959184
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_160b5a7073e13bd2a7ca1331705f9ba27b927df0a330a1d60beb865b70befa41.jpg",
+      "sha256": "9c0c24efe4792599d14dc2af28ec77e4515172d0a9578d06bbccda7d2c7fbc77"
+    },
+    {
+      "id": "dog-03",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-03.jpg",
+      "width": 499,
+      "height": 265,
+      "labels": [
+        [
+          1.0,
+          0.514028,
+          0.516981,
+          0.943888,
+          0.966038
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_17a99722847e21d3321315f85bef4f796c321323ebb0501b9f96a6688b167b93.jpg",
+      "sha256": "b9e81f7944149bbb49fc95bd8ff826966e33b2eec68159224552786b71762756"
+    },
+    {
+      "id": "dog-04",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-04.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          1.0,
+          0.552104,
+          0.529333,
+          0.891784,
+          0.92
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_1e91d383c732d96ac6e9d61d62cf5a9c3ddf5fd4adbc235df16694bc5237bd9b.jpg",
+      "sha256": "9b682b5cfa8193911456c4d86b5668218fc78a93adbbf36e584f23daafa95c3f"
+    },
+    {
+      "id": "dog-05",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-05.jpg",
+      "width": 350,
+      "height": 262,
+      "labels": [
+        [
+          1.0,
+          0.515714,
+          0.540076,
+          0.968571,
+          0.919847
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_2ed441735b18fcd80c719fdf077d4d670a0f191c8b67863c1d25034dfbef8833.jpg",
+      "sha256": "e86fcbf7b019c9b3baf11d582b5c51e13986d0e81249ac215df98a82c698d007"
+    },
+    {
+      "id": "dog-06",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-06.jpg",
+      "width": 233,
+      "height": 224,
+      "labels": [
+        [
+          1.0,
+          0.506438,
+          0.502232,
+          0.918455,
+          0.995536
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_4dba26d28188d6b9791e599ff062cc2e846b7458d2653d301a18b105a05d21ad.jpg",
+      "sha256": "0ff8a8f2337ddf48dd25821dafd7321160eac4b6f973a85dfbfbb19c2dc6576f"
+    },
+    {
+      "id": "dog-07",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-07.jpg",
+      "width": 399,
+      "height": 300,
+      "labels": [
+        [
+          1.0,
+          0.576441,
+          0.525,
+          0.847118,
+          0.803333
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_50418676c6ab273ae27f2222e514e3b65569272bcc5f1998f2172f9ad7240ac4.jpg",
+      "sha256": "7a1894ec7a7369052832b59ec1ad67d1c1b7262ed7d259566cc5961abdb206eb"
+    },
+    {
+      "id": "dog-08",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-08.jpg",
+      "width": 320,
+      "height": 222,
+      "labels": [
+        [
+          1.0,
+          0.520312,
+          0.558559,
+          0.959375,
+          0.837838
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_5e189cf496eb10627d7e0322cf4293c3c47c4ba4b50c4e6ddd95a836bd940671.jpg",
+      "sha256": "cb68081bc106794a708aadbe565f0a608b7fea62df47eba8e2a20ae5195c0b1a"
+    },
+    {
+      "id": "dog-09",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-09.jpg",
+      "width": 474,
+      "height": 460,
+      "labels": [
+        [
+          1.0,
+          0.522152,
+          0.518478,
+          0.955696,
+          0.963043
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_5e8a0eb63f96b9165ba963c184371807c11f35dc08058a6e12e5db72bbc9c185.jpg",
+      "sha256": "e63c427d411c4d22cad95f0fcab9dc79c0d9abb4ea178305c73314cded025685"
+    },
+    {
+      "id": "dog-10",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-10.jpg",
+      "width": 426,
+      "height": 500,
+      "labels": [
+        [
+          1.0,
+          0.543427,
+          0.539,
+          0.913146,
+          0.922
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_67fa91114e1470a1b2b679c51efebee2ce4ae521d4a294a979e0afc3945d8385.jpg",
+      "sha256": "3a69596625b1070cd3832106d0f6cf35c4bc7ec26ca207519f20679b0a91ea42"
+    },
+    {
+      "id": "dog-11",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-11.jpg",
+      "width": 320,
+      "height": 269,
+      "labels": [
+        [
+          1.0,
+          0.529687,
+          0.507435,
+          0.940625,
+          0.98513
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_85686adb8695eb65bcb7dd596ebecdc7900af3ba9c58e84a1a257d06a13f621b.jpg",
+      "sha256": "a34a12231d6f65f46ee9b4852fa0a86c8c32ff32e670f6f0d35046ee62b18f29"
+    },
+    {
+      "id": "dog-12",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-12.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          1.0,
+          0.417836,
+          0.565333,
+          0.703407,
+          0.869333
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_8c180ba10d5f931f1848c918a92efa76d61c7b7e1fd363077ebf5cdef33c533a.jpg",
+      "sha256": "f016b67d2d984d42082b584f422cc59273e1015cc6e2f42a3de678bcdf1b90c0"
+    },
+    {
+      "id": "dog-13",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-13.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          1.0,
+          0.599198,
+          0.573333,
+          0.745491,
+          0.848
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_9443bb093a8b3f3647e013a541d3629dbc18be05e79c8e03f457707426e43049.jpg",
+      "sha256": "7f061d2e7d359d3db17ce47aa712c0c1b3ef70e193d586a5bb8960cb7924b70b"
+    },
+    {
+      "id": "dog-14",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-14.jpg",
+      "width": 350,
+      "height": 261,
+      "labels": [
+        [
+          1.0,
+          0.507143,
+          0.509579,
+          0.985714,
+          0.980843
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_9fa7157890b97e771410fff7ef9876579d30973f0355bff761b8929a543e4c61.jpg",
+      "sha256": "72f54b940aea8678dc4a24497cd263459c2acb10021fac701e6638437b4be631"
+    },
+    {
+      "id": "dog-15",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-15.jpg",
+      "width": 399,
+      "height": 300,
+      "labels": [
+        [
+          1.0,
+          0.481203,
+          0.596667,
+          0.877193,
+          0.76
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_a673dfc06780efbf7f89dd7e222b57b20a5e1ed9003d0b555e83e3531b5a5a1c.jpg",
+      "sha256": "fb8a6b2b68a885223c2f33f07ba1e7f55dbc7d80ad1aca269a9379add2dae06b"
+    },
+    {
+      "id": "dog-16",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-16.jpg",
+      "width": 240,
+      "height": 166,
+      "labels": [
+        [
+          1.0,
+          0.51875,
+          0.53012,
+          0.9625,
+          0.939759
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_b7a08971fe767e0a41540c25524f047e71721bafac82c528627cf6428c4d6d18.jpg",
+      "sha256": "c755cb1e86e50ad05e3ef892a4e1066e0a41183545c9bba89aa5ea450fab3428"
+    },
+    {
+      "id": "dog-17",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-17.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          1.0,
+          0.538,
+          0.490642,
+          0.848,
+          0.820856
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_baaea68a80d4bfc935d4df3a4509d63c9fe263e18e14be413bd9a1edfbdb99b1.jpg",
+      "sha256": "c48da44d7c67aa4ccc98e7956f4b33d0ccf40925cfaf8d0f71b513f9773d32bc"
+    },
+    {
+      "id": "dog-18",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-18.jpg",
+      "width": 500,
+      "height": 448,
+      "labels": [
+        [
+          1.0,
+          0.654,
+          0.393973,
+          0.692,
+          0.770089
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_cabcefa71b392276580ad1bc9d56ace2d43531d0142dde4caf738588b7a13dad.jpg",
+      "sha256": "3c33dd35ce18adefabffd5744d485f2ac562d217912278a1989e97bcc5439589"
+    },
+    {
+      "id": "dog-19",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-19.jpg",
+      "width": 335,
+      "height": 366,
+      "labels": [
+        [
+          1.0,
+          0.502985,
+          0.509563,
+          0.99403,
+          0.964481
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_dcbaef69bf26c099838e59aaf8630591d4cddc2b526969dcf775a9d295bc2c90.jpg",
+      "sha256": "405e1a3ea2c50c1fd36291b271d487a0da675a67ae617dfa49c142fc8d7e4d45"
+    },
+    {
+      "id": "dog-20",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-20.jpg",
+      "width": 336,
+      "height": 226,
+      "labels": [
+        [
+          1.0,
+          0.5,
+          0.519912,
+          0.613095,
+          0.942478
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_f3a1a84745447d3e64d876b0f5131296ead462018f1a22d213acf9cb136b6202.jpg",
+      "sha256": "f7898be6c33d4363c9d1439d8065775fa5167aaa034d2db3a533a6bc8471e8ce"
+    },
+    {
+      "id": "dog-21",
+      "species": "dog",
+      "split": "train",
+      "url": "./assets/samples/dog-21.jpg",
+      "width": 273,
+      "height": 389,
+      "labels": [
+        [
+          1.0,
+          0.551282,
+          0.440874,
+          0.897436,
+          0.845758
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_f6597404fa41202ed0983d5aa1cacc22ad2e5eaf18c5281b77e8a5fa0a1c8720.jpg",
+      "sha256": "6c406135cfe181775b17c3af7f73122e7a141333dbc6e77dabafdf2556f2cd6c"
+    },
+    {
+      "id": "cat-22",
+      "species": "cat",
+      "split": "val",
+      "url": "./assets/samples/cat-22.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.488,
+          0.490642,
+          0.876,
+          0.895722
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_03f44d9ba9a063f5aee066034663a3f688a52fd9c478d4aafd1402aa27593e48.jpg",
+      "sha256": "912866c4743c90cb06d3c126cea69710da96959b5261b4ad605a5ba98453265d"
+    },
+    {
+      "id": "cat-23",
+      "species": "cat",
+      "split": "val",
+      "url": "./assets/samples/cat-23.jpg",
+      "width": 200,
+      "height": 149,
+      "labels": [
+        [
+          0.0,
+          0.485,
+          0.496644,
+          0.61,
+          0.885906
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_60301dd07731b76c485b10bf1ffd7bf63d5c212ffab7a05db8c7ce9ee5d9e85f.jpg",
+      "sha256": "332a90f8d664d91caa3061001d1abbdbad535b231ee7ecdabe4757ee7bf385cd"
+    },
+    {
+      "id": "cat-24",
+      "species": "cat",
+      "split": "val",
+      "url": "./assets/samples/cat-24.jpg",
+      "width": 499,
+      "height": 333,
+      "labels": [
+        [
+          0.0,
+          0.544088,
+          0.364865,
+          0.863727,
+          0.717718
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_62246e66f438b2c31553fbd15de179cf3341034298283842685a5ad23e0854bf.jpg",
+      "sha256": "be02d177361cab60cd02b06b245d6ad21960a71ad3cdaea25705629c15b8d116"
+    },
+    {
+      "id": "cat-25",
+      "species": "cat",
+      "split": "val",
+      "url": "./assets/samples/cat-25.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          0.0,
+          0.465932,
+          0.454667,
+          0.815631,
+          0.861333
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_6b039215fa49d46a9905f7790e417b506f54f4ca372fbff9ed25e2c5f3192c83.jpg",
+      "sha256": "7528b769bd2050d36e7f0e19c7e17b7a1f0e00a8e9e2500fbc9d58c5f59e57dd"
+    },
+    {
+      "id": "cat-26",
+      "species": "cat",
+      "split": "val",
+      "url": "./assets/samples/cat-26.jpg",
+      "width": 499,
+      "height": 382,
+      "labels": [
+        [
+          0.0,
+          0.511022,
+          0.502618,
+          0.941884,
+          0.926702
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_7f453ccb85ba369c9a50523efb3da26e6f46398d6ce5683662ed817dbe987353.jpg",
+      "sha256": "1892fa432ce0ebbaee8e3e65098e9512a0d92290263686200db1482933d33377"
+    },
+    {
+      "id": "cat-27",
+      "species": "cat",
+      "split": "val",
+      "url": "./assets/samples/cat-27.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.491,
+          0.410428,
+          0.69,
+          0.708556
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "cat_82819aac76bd446aac5a334af90534a1974f5a1a8775cd1199e26fc8f945a96f.jpg",
+      "sha256": "20e573afd5e08c05dd1d2fd4141483e06670203560f8f72c5b0dc892351b5434"
+    },
+    {
+      "id": "dog-22",
+      "species": "dog",
+      "split": "val",
+      "url": "./assets/samples/dog-22.jpg",
+      "width": 365,
+      "height": 408,
+      "labels": [
+        [
+          1.0,
+          0.538356,
+          0.48652,
+          0.884932,
+          0.894608
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_0a136891f0942da3fe0b4ffba4c53f3787c61259d5753de088a3f051717cba15.jpg",
+      "sha256": "c09ad0e97aab289c33d94638e0a3c74f2e8a45fb778abb0f7668f516f5fddfd1"
+    },
+    {
+      "id": "dog-23",
+      "species": "dog",
+      "split": "val",
+      "url": "./assets/samples/dog-23.jpg",
+      "width": 422,
+      "height": 499,
+      "labels": [
+        [
+          1.0,
+          0.510664,
+          0.53006,
+          0.978673,
+          0.93988
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_0a476525f0cd12f239bfaecd813f2df5723681b3e1436e6d656b5b4dd9a79193.jpg",
+      "sha256": "3f96e3ab86dba6f6f7391b9f6c4d8ff555dd4607ea49f47a54f0fd8b9f86c9a8"
+    },
+    {
+      "id": "dog-24",
+      "species": "dog",
+      "split": "val",
+      "url": "./assets/samples/dog-24.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          1.0,
+          0.537074,
+          0.506667,
+          0.925852,
+          0.986667
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_49f3525950c69175a8eb6cd0697cf31210ef3ec8b0ebb6c7384d805bfd24fdc0.jpg",
+      "sha256": "53ecd021e6eb42fe742e7a9009d6b15855b546fbbc7843645fd26e4abd7daf70"
+    },
+    {
+      "id": "dog-25",
+      "species": "dog",
+      "split": "val",
+      "url": "./assets/samples/dog-25.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          1.0,
+          0.589178,
+          0.508,
+          0.821643,
+          0.957333
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_57573cea19a745354b38826e7aed9b606415b18ca5c3de5566ab64ad29bf0e4d.jpg",
+      "sha256": "718b2f18b3cdcf4bde86c2332bf337b57b54dec7409e61ea6b2c5576e73676d4"
+    },
+    {
+      "id": "dog-26",
+      "species": "dog",
+      "split": "val",
+      "url": "./assets/samples/dog-26.jpg",
+      "width": 374,
+      "height": 500,
+      "labels": [
+        [
+          1.0,
+          0.505348,
+          0.523,
+          0.989305,
+          0.838
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_8cca045b8c207d4053c8c5af9c42f25daa6785ba5c4a6fbd98d7c003be22b9ec.jpg",
+      "sha256": "ad9522788da63b3b1c1de98fb533164f8f8672e8b9135d35be862e7247859073"
+    },
+    {
+      "id": "dog-27",
+      "species": "dog",
+      "split": "val",
+      "url": "./assets/samples/dog-27.jpg",
+      "width": 448,
+      "height": 500,
+      "labels": [
+        [
+          1.0,
+          0.610491,
+          0.479,
+          0.529018,
+          0.934
+        ]
+      ],
+      "prediction": null,
+      "originalFilename": "dog_a55c6c91c3d14f6eacd94f51768f25ff0ca461f469ae6c1b3db7aa61410f9644.jpg",
+      "sha256": "7d2ce204f6525babfca56e129fb00ea3080c41424cfaf9376b31ac83ae8dab2b"
+    },
+    {
+      "id": "cat-28",
+      "species": "cat",
+      "split": "test",
+      "url": "./assets/samples/cat-28.jpg",
+      "width": 360,
+      "height": 269,
+      "labels": [
+        [
+          0.0,
+          0.552778,
+          0.540892,
+          0.744444,
+          0.903346
+        ]
+      ],
+      "prediction": "./assets/results/cat-28-prediction.jpg",
+      "originalFilename": "cat_266141a1de0beaf5f22e821619202fff5513809a5c8630f0f76ed46859f3aa34.jpg",
+      "sha256": "c7af389b8db7cd722710a2078ca6c1dd0dc6f242aa06634a141f3a80308ad6f2"
+    },
+    {
+      "id": "cat-29",
+      "species": "cat",
+      "split": "test",
+      "url": "./assets/samples/cat-29.jpg",
+      "width": 199,
+      "height": 150,
+      "labels": [
+        [
+          0.0,
+          0.537688,
+          0.506667,
+          0.80402,
+          0.88
+        ]
+      ],
+      "prediction": "./assets/results/cat-29-prediction.jpg",
+      "originalFilename": "cat_396092b15ef22cacb555dae27ee93ed5d2bc1f8d2bfe868b4ffef43ea5168bfd.jpg",
+      "sha256": "38ee8506558ce2379092582a6d654cd78f23ac47abec3c252d70282bf480cafc"
+    },
+    {
+      "id": "cat-30",
+      "species": "cat",
+      "split": "test",
+      "url": "./assets/samples/cat-30.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          0.0,
+          0.482,
+          0.522727,
+          0.888,
+          0.804813
+        ]
+      ],
+      "prediction": "./assets/results/cat-30-prediction.jpg",
+      "originalFilename": "cat_d9215fc7bffcec9552f1830aacf1262de9fcbdeacbbc5da25b016b15ba8ebdc0.jpg",
+      "sha256": "0a2f356cbc744fd8e1ea14e6002c19f03c6d591508cfdcf1287850e0775df822"
+    },
+    {
+      "id": "dog-28",
+      "species": "dog",
+      "split": "test",
+      "url": "./assets/samples/dog-28.jpg",
+      "width": 500,
+      "height": 374,
+      "labels": [
+        [
+          1.0,
+          0.515,
+          0.493316,
+          0.634,
+          0.895722
+        ]
+      ],
+      "prediction": "./assets/results/dog-28-prediction.jpg",
+      "originalFilename": "dog_3525cd86a8cc24864a0e55fe31093f5b3a9a15026d79325ec69fe3ac692efe63.jpg",
+      "sha256": "eda800d37364cbc7d61b6d18ac6319422051fb4a2b254101e77e340a991512a5"
+    },
+    {
+      "id": "dog-29",
+      "species": "dog",
+      "split": "test",
+      "url": "./assets/samples/dog-29.jpg",
+      "width": 463,
+      "height": 479,
+      "labels": [
+        [
+          1.0,
+          0.535637,
+          0.563674,
+          0.760259,
+          0.688935
+        ]
+      ],
+      "prediction": "./assets/results/dog-29-prediction.jpg",
+      "originalFilename": "dog_4fc023b21310d511cdbc3b91a402dbfdbc5baee08fc46f00cb738bbf1c3c3ff7.jpg",
+      "sha256": "424b0f79ec90088a4778193f0ecec76871e4f8457d0db0ab2cf5370dbb5f176e"
+    },
+    {
+      "id": "dog-30",
+      "species": "dog",
+      "split": "test",
+      "url": "./assets/samples/dog-30.jpg",
+      "width": 499,
+      "height": 375,
+      "labels": [
+        [
+          1.0,
+          0.392786,
+          0.586667,
+          0.645291,
+          0.826667
+        ]
+      ],
+      "prediction": "./assets/results/dog-30-prediction.jpg",
+      "originalFilename": "dog_8727fba6a1ca731f5820822ba47358fe33fa80b1d6445396fdb4b038b3dbf1dc.jpg",
+      "sha256": "419901bfc8dd0a6c2c03c9f76e567c7bfc451dcdb176b96f36144e55a0f7dd7e"
+    }
+  ],
+  "sourceRun": "runs/detect/train-3",
+  "sourceDocument": "CSST106_Lab_Experiment_06_YOLOV8_Object_Detection.docx",
+  "modelSha256": "455ee2271268569805bf32d8a5bfdf1f6ddf499a6d02d20f47d2345dda7852d9",
+  "notes": [
+    "The document filename says YOLOv8; its body specifies YOLOv11.",
+    "10 epochs were explicitly requested instead of the handout's 100-epoch example.",
+    "Original user annotations are preserved. Ultralytics reported and ignored one duplicate training box.",
+    "Six test images are a small demonstration set, not a general-purpose benchmark."
+  ]
+}

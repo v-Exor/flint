@@ -1,0 +1,95 @@
+College of Computer Studies
+Laboratory Exercise No. 6
+
+Topic:
+YOLOV11 Object Detection
+Week No.
+8 - 9
+Course Code:
+CSST106
+Term:
+1st Semester
+Course Title:
+Computer Vision and Perception
+Academic Year:
+2026-2027
+
+Laboratory Activity 5: Object Detection with YOLOv11
+This lab guides you through using YOLOv11 for real-time object detection and training a custom model. You will:
+Understand inference with a pre-trained YOLOv11 model
+Prepare and annotate your own dataset
+Train YOLOv11 on a custom dataset
+Evaluate and test your trained model
+Learning Outcomes
+Gain hands-on experience with state-of-the-art object detection.
+Understand dataset preparation and annotation.
+Learn the process of training and fine-tuning YOLOv11 models.
+Interpret training and evaluation metrics.
+
+Part 1: Real-time Object Detection using Pre-trained YOLOv11
+Install required packages:
+bash
+pip install ultralytics opencv-python
+Use the provided Python script (or modify) to run real-time detection from your webcam:
+Loads pre-trained YOLOv11n model
+Draws detected bounding boxes with labels and confidences
+Run the script and observe detection accuracy and speed.
+Try pointing different objects (people, cars, bottles) and see results.
+Part 2: Preparing a Custom Dataset for Training
+Collect images of objects you want to detect.
+Annotate objects in each image using a tool such as LabelImg or Roboflow.
+Save annotations in YOLO format: a .txt file for each image with lines:
+text
+class_id x_center y_center width height
+using normalized coordinates.
+Organize your files:
+text
+/dataset
+│── /images
+│     ├── /train
+│     └── /val
+│── /labels
+      ├── /train
+      └── /val
+Create a data.yaml file specifying dataset info:
+text
+train: ./dataset/images/train
+val: ./dataset/images/val
+nc: <number_of_classes>
+names: ['class1', 'class2', ...]
+
+Part 3: Training YOLOv11 on Your Dataset
+Install Ultralytics YOLO if you haven’t:
+bash
+pip install ultralytics
+Train using the CLI:
+bash
+yolo task=detect mode=train model=YOLOv11n.pt data=data.yaml epochs=100 imgsz=640
+Training outputs weights and metrics in the runs/detect/train folder.
+Alternatively, train programmatically:
+python
+from ultralytics import YOLO
+model = YOLO('YOLOv11n.pt')
+model.train(data='data.yaml', epochs=100, imgsz=640)
+Monitor training logs for loss and accuracy improvements.
+
+Part 4: Evaluating and Using Your Trained Model
+Validate on your test set:
+bash
+yolo task=detect mode=val model=runs/detect/train/weights/best.pt data=data.yaml
+Run inference on new images or video:
+python
+model = YOLO('runs/detect/train/weights/best.pt')
+results = model('new_image.jpg')
+results.show()
+Analyze detection accuracy, precision, recall.
+
+Feel free to experiment with different models (e.g., YOLOv11s, YOLOv11m) and hyperparameters to improve performance!
+Question: 
+What is object detection in computer vision, and how does it differ from image classification? Explain your answer using a real-world example.
+References:
+https://www.geeksforgeeks.org/machine-learning/object-detection-using-YOLOv11/
+https://www.youtube.com/watch?v=r0RspiLG260&t=975s
+https://www.youtube.com/watch?v=wuZtUMEiKWY&t=912s
+
+
