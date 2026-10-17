@@ -1,5 +1,14 @@
 # Lab 6 validation record
 
+## Public GitHub Pages deployment — 17 October 2026
+
+- Repository: https://github.com/v-Exor/LabAct6_CSST106
+- Website: https://v-exor.github.io/LabAct6_CSST106/
+- GitHub Actions deployment completed successfully. The public homepage returned HTTP 200.
+- Three browser tests passed against the actual public HTTPS website: both real YOLO model inference paths; annotation, coordinate validation, label export, history and the ten-epoch cap; image upload and evaluation of all six test images with JSON export.
+- The repository contains all 132 source, model, runtime, dataset, report, download, test, and deployment files. Local dependency caches and test artifacts are excluded.
+- The repository link is configured. Set `compilationUrl` in `site-config.js` when the compilation website is available.
+
 ## Completed verification
 
 - Primary Word document re-read and mapped against all four parts, four learning outcomes, the detection-vs-classification question, and recorded original outputs. Filename/body identification conflict and ten-epoch override are documented.
